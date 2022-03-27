@@ -51,11 +51,6 @@
 	.client_profile_pic{ width:150px; height:150px;}
 	.quote_section.flt{ margin:6px 0 0 0;}
 	
-   
-	
-	
-	 
-	
 }
 
 @media only screen and (max-width: 767px) {
@@ -78,7 +73,8 @@
 	.top_cont_latest{background-size: 90% auto; -webkit-background-size: 90% auto;padding-bottom: 68%;}
 	.top_left_cont { padding: 10% 0;}
 	.top_left_cont h2{ font-size:29px;}
-	
+	.top_content{padding-top: 0px;}
+
 	body{ font-size:12px;}
 	h2{ font-size:26px;}
 	h3{ font-size:14px;}
@@ -173,6 +169,7 @@
 	.quote_section p{ font-size:15px;} 
 	.c-logo-part{ padding:18px 0px;}
 	.c-logo-part ul li{ margin:6px 0px; display:block;}
+	.top_content{padding-top: 0px;}
 	/* .top_left_cont h2 {line-height: 30px;} */
 	
 }
