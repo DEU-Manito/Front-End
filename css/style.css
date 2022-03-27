@@ -237,7 +237,8 @@ p{
 .top_left_cont h2{
 	font-size:40px;
 	color:#111111;
-	line-height: 52px;
+	/* line-height: 52px; */
+	line-height: 150%;
 	margin:0 0 26px 0;
 	font-family:'Dosis';
 	text-align:left;
