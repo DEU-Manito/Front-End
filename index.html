@@ -57,38 +57,23 @@
 <!-- 기타 js -->
 <script type="text/javascript" src="js/classie.js"></script>
 
+<!-- 모바일 메뉴 탭 Script -->
+<script src="./js/response/header_declare_mobile.js"></script>
+
 
 <!----------------------------------------------------------------------------------->
 
 <script type="text/javascript">
-	$(document).ready(function(e) {
-        $('.res-nav_click').click(function(){
-		$('ul.toggle').slideToggle(600)	
-			});	
-			
-	$(document).ready(function() {
-$(window).bind('scroll', function() {
-         if ($(window).scrollTop() > 0) {
-             $('#header_outer').addClass('fixed');
-         }
-         else {
-             $('#header_outer').removeClass('fixed');
-         }
-    });
-	
-	  });
-	  
-
-		    });	
-function resizeText() {
-	var preferredWidth = 767;
-	var displayWidth = window.innerWidth;
-	var percentage = displayWidth / preferredWidth;
-	var fontsizetitle = 25;
-	var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
-	$(".divclass").css("font-size", newFontSizeTitle)
-}
+  function resizeText() {
+    var preferredWidth = 767;
+    var displayWidth = window.innerWidth;
+    var percentage = displayWidth / preferredWidth;
+    var fontsizetitle = 25;
+    var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
+    $(".divclass").css("font-size", newFontSizeTitle)
+  }
 </script>
+
 </head>
 <body>
   <script>
@@ -300,7 +285,7 @@ function resizeText() {
     
 
 
-    
+
     <!-- Portfolio Wrap -->
     <div class="isotope" style="position: relative; overflow: hidden; height: 480px;" id="portfolio-wrap"> 
       
@@ -667,17 +652,10 @@ function resizeText() {
     -->
   </div>
 </footer>
-<script type="text/javascript">
-    $(document).ready(function(e) {
-        $('#header_outer').scrollToFixed();
-        $('.res-nav_click').click(function(){
-            $('.main-nav').slideToggle();
-            return false    
-            
-        });
-        
-    });
-</script> 
+
+
+<!-- 모바일 메뉴 탭 js -->
+<script src="./js/response/mobile.js"></script>
 
 <!-- WOW JS 초기화 -->
 <script>
@@ -699,34 +677,10 @@ function resizeText() {
 </script> 
 
 <script type="text/javascript">
-	$(window).load(function(){
-		
-		$('a').bind('click',function(event){
-			var $anchor = $(this);
-			
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top - 91
-			}, 1500,'easeInOutExpo');
-			/*
-			if you don't want to use the easing effects:
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1000);
-			*/
-			event.preventDefault();
-		});
-	})
-</script> 
-
-
-<script type="text/javascript">
-
-   
   jQuery(document).ready(function($){     
 // Portfolio Isotope
 	var container = $('#portfolio-wrap');	
 	
-
 	container.isotope({
 		animationEngine : 'best-available',
 	  	animationOptions: {
@@ -796,6 +750,7 @@ $( window ).load(function() {
 	return false;
 });
 </script>
+
 
 <!-- 부트스트랩 js CDN -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
