@@ -27,6 +27,7 @@
     <link href="../../css/animate.css" rel="stylesheet" type="text/css">
     <link href="../../css/design.css" rel="stylesheet" type="text/css">
     <link href="../../css/ui/board/article_card.css" rel="stylesheet" type="text/css">
+    <link href="../../css/ui/board/search_box.css" rel="stylesheet" type="text/css">
     <!-- <link href="../../css/ui/login.css" rel="stylesheet" type="text/css"> -->
 
     <!----------------------------------------------------------------------------------->
@@ -112,25 +113,127 @@
         </div>
     </header>
     <!--Header_section-->
+    <!--Service-->
+<section  id="service">
+    <div class="container">
+      <h2>HELP EACH OTHER</h2>
+      <div class="service_area">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="service_block">
+              <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-street-view"></i></span> </div>
+              <h3 class="animated fadeInUp wow">위치 기반 서비스</h3>
+              <p class="animated fadeInDown wow">마니또는 내 주변의 익명의 사람들과 소통합니다.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service_block">
+              <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa-solid fa-comments"></i></span> </div>
+              <h3 class="animated fadeInUp wow">실시간 단체 채팅 서비스</h3>
+              <p class="animated fadeInDown wow">
+                주변의 사람들과 익명으로 채팅이 가능합니다.
+                <br>
+                여러 사람과 주변 상황을 공유하며 재미있는 이야기를 해보세요.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service_block">
+              <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa-solid fa-hand-holding-hand"></i></span> </div>
+              <h3 class="animated fadeInUp wow">도움 요청 서비스</h3>
+              <p class="animated fadeInDown wow">
+                주변 사람에게 도움을 요청할 수 있습니다.
+                <br>
+                부담 갖지 말고 도와줄 마니또를 찾아보세요.
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!--Service-->
     <div class="container" style="margin-top: 3rem;">
+        <div class="container__item">
+            <form class="form">
+                <input type="email" class="form__field" placeholder="검색할 내용을 입력하세요" />
+                <button type="button" class="btn btn--primary  btn--inside uppercase">Search</button>
+            </form>
+        </div>
+
         <div class="drop__card">
             <div class="drop__data">
                 <img src="../../img/client-pic2.jpg" alt="" class="drop__img">
                 <div>
                     <h1 class="drop__name">Author</h1>
+                    <p class="drop_address">부산광역시 부산진구 가야대로 698번가길 8-1</p>
+                    <p class="drop_price">10,000 원</p>
+                </div>
+
+                <div class="drop__title">
+                    <h1>물건 팝니다@@@!!@#!#@#*!&@*(#&*!(@&#*(!@&#*(!@*#(&#*(@!&*(#&!*(@&#*(!@ </h1>                    </div>
+            </div>
+            <input type="hidden" id = "article_id" value = "{{id}}">
+        </div>
+
+        <div class="drop__card">
+            <div class="drop__data">
+                <img src="../../img/client-pic2.jpg" alt="" class="drop__img">
+                <div>
+                    <h1 class="drop__name">Author</h1>
+                    <p class="drop_address">부산광역시 부산진구 가야대로 698번가길 8-1</p>
                     <span class="drop__proffession">10,000 원</span>
                 </div>
 
                 <div class="drop__title">
-                    <h1>ID Title</h1>                    </div>
+                    <h1>물건 팝니다@@@!!@#!#@#*!&@*(#&*!(@&#*(!@&#*(!@*#(&#*(@!&*(#&!*(@&#*(!@ </h1>                    </div>
             </div>
             <input type="hidden" id = "article_id" value = "{{id}}">
-            <div>
-                <a href="" class="drop__soc"><i class='bx bxl-instagram'></i></a>
-                <a href="" class="drop__soc"><i class='bx bxl-facebook'></i></a>
-                <a href="" class="drop__soc"><i class='bx bxl-twitter' ></i></a>
+        </div>
+
+        <div class="drop__card">
+            <div class="drop__data">
+                <img src="../../img/client-pic2.jpg" alt="" class="drop__img">
+                <div>
+                    <h1 class="drop__name">Author</h1>
+                    <p class="drop_address">부산광역시 부산진구 가야대로 698번가길 8-1</p>
+                    <span class="drop__proffession">10,000 원</span>
+                </div>
+
+                <div class="drop__title">
+                    <h1>물건 팝니다@@@!!@#!#@#*!&@*(#&*!(@&#*(!@&#*(!@*#(&#*(@!&*(#&!*(@&#*(!@ </h1>                    </div>
             </div>
+            <input type="hidden" id = "article_id" value = "{{id}}">
+        </div>
+        <div class="drop__card">
+            <div class="drop__data">
+                <img src="../../img/client-pic2.jpg" alt="" class="drop__img">
+                <div>
+                    <h1 class="drop__name">Author</h1>
+                    <p class="drop_address">부산광역시 부산진구 가야대로 698번가길 8-1</p>
+                    <span class="drop__proffession">10,000 원</span>
+                </div>
+
+                <div class="drop__title">
+                    <h1>물건 팝니다@@@!!@#!#@#*!&@*(#&*!(@&#*(!@&#*(!@*#(&#*(@!&*(#&!*(@&#*(!@ </h1>                    </div>
+            </div>
+            <input type="hidden" id = "article_id" value = "{{id}}">
+        </div>
+        <div class="drop__card">
+            <div class="drop__data">
+                <img src="../../img/client-pic2.jpg" alt="" class="drop__img">
+                <div>
+                    <h1 class="drop__name">Author</h1>
+                    <p class="drop_address">부산광역시 부산진구 가야대로 698번가길 8-1</p>
+                    <span class="drop__proffession">10,000 원</span>
+                </div>
+
+                <div class="drop__title">
+                    <h1>물건 팝니다@@@!!@#!#@#*!&@*(#&*!(@&#*(!@&#*(!@*#(&#*(@!&*(#&!*(@&#*(!@ </h1>                    </div>
+            </div>
+            <input type="hidden" id = "article_id" value = "{{id}}">
         </div>
     </div>
 

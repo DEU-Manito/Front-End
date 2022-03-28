@@ -16,6 +16,7 @@
 
 .drop__card{
     /* width: 60%; */
+    height: 12rem;
     justify-content: space-between;
     padding: 1rem 1.25rem 1rem .75rem;
     margin: 0 auto 1rem;
@@ -30,9 +31,12 @@
     background: rgba(255,255,255, 0.15);
 }
 
+.drop__data p{
+    display: block;
+}
 .drop__img{
-    width: 100px;
-    height: 100px;
+    width: 12%;
+    height: 12%;
     border-radius: 0.5rem;
     margin-right: 1rem;
 }
@@ -43,11 +47,16 @@
     color: var(--name-text-color);
 }
 
+.drop__title{
+    margin-left: 2rem;
+    word-break: break-all;
+}
+
 .drop__title > h1{
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: var(--text-color)
 }
 
-.drop__title{
-    margin-left: 2rem;
+.drop__title > p{
+    font-size: 1.2rem;
 }
