@@ -1,0 +1,15 @@
+.article_card{
+    display: flex;
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+    border-radius: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.article_card img{
+    margin: 1rem;
+    width: 100px;
+    height: 100px;
+    justify-content: start;
+    border-radius: 1rem;
+}
