@@ -1,15 +1,53 @@
-.article_card{
+/*=====-------------------------- DRAG and DROP --------------------------=====*/
+/* .drop, .drop__container{
+    height: 90%;
+    display: block;
+} */
+
+/* .drop{
+    align-items: center;
+    justify-content: center;
+} */
+
+.drop__card, .drop__data{
     display: flex;
-    box-shadow: 0px 0px 10px rgb(211, 211, 211);
-    border-radius: 1rem;
-    width: 80%;
-    margin: 0 auto;
+    align-items: center;
 }
 
-.article_card img{
-    margin: 1rem;
+.drop__card{
+    /* width: 60%; */
+    justify-content: space-between;
+    padding: 1rem 1.25rem 1rem .75rem;
+    margin: 0 auto 1rem;
+    /* backdrop-filter: blur(20px); */
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.drop__card:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    background: rgba(255,255,255, 0.15);
+}
+
+.drop__img{
     width: 100px;
     height: 100px;
-    justify-content: start;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+.drop__name{
+    font-family:'Dosis';
+    font-size: 30px;
+    color: var(--name-text-color);
+}
+
+.drop__title > h1{
+    font-size: 1rem;
+    color: var(--text-color)
+}
+
+.drop__title{
+    margin-left: 2rem;
 }

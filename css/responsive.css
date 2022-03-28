@@ -3,7 +3,7 @@
    ========================================================================== */
 
 @media only screen and (max-width: 1380px) {
-	
+
 }
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
 	.portfolioContainer { margin:0px auto;}
@@ -50,7 +50,6 @@
 	.client_area{ width:700px;}
 	.client_profile_pic{ width:150px; height:150px;}
 	.quote_section.flt{ margin:6px 0 0 0;}
-	
 }
 
 @media only screen and (max-width: 767px) {
@@ -151,6 +150,9 @@
 	margin-left: 10%;
 }
 	
+.drop__card{
+	width: 100%;	
+}
 }
 
 @media only screen and (max-width: 479px) {
@@ -171,5 +173,4 @@
 	.c-logo-part ul li{ margin:6px 0px; display:block;}
 	.top_content{padding-top: 0px;}
 	/* .top_left_cont h2 {line-height: 30px;} */
-	
 }
