@@ -20,6 +20,7 @@ a {
       margin : 4rem 0 2rem 0;
       position: sticky;
       top: 100px;
+      z-index: 5;
   }
   .uppercase {
     text-transform: uppercase;

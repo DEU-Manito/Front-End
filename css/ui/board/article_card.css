@@ -38,7 +38,8 @@
     width: 12%;
     height: 12%;
     border-radius: 0.5rem;
-    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
 }
 
 .drop__name{
@@ -59,4 +60,17 @@
 
 .drop__title > p{
     font-size: 1.2rem;
+}
+
+.drop_price{
+    font-size: 1.2rem;
+}
+
+.drop_address{
+    width: 100%;
+}
+
+.drop_inform{
+    width: 15%;
+    word-break: break-all;
 }
