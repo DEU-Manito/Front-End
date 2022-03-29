@@ -44,7 +44,7 @@
 
 .drop__name{
     font-family:'Dosis';
-    font-size: 30px;
+    font-size: 2em;
     color: var(--name-text-color);
 }
 
@@ -54,16 +54,16 @@
 }
 
 .drop__title > h1{
-    font-size: 1.3rem;
+    font-size: 1.3em;
     color: var(--text-color)
 }
 
 .drop__title > p{
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .drop_price{
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .drop_address{
