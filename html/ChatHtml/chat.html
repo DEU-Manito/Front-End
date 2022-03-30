@@ -55,7 +55,8 @@
     <script type="text/javascript" src="../../js/wow.js"></script>
 
     <!-- 카카오 맵 js -->
-    <script src="../../js/kakaoMapApi/kakaoMap.js"></script>
+    <!-- 사용할 라이브러리의 이름을 링크 뒤에 명시해줘야 함 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=88a3b7ff3745fa1b7d0e7011ed06a10f&libraries=services"></script>
     
     <!-- 기타 js -->
 
@@ -74,7 +75,6 @@
             $(".divclass").css("font-size", newFontSizeTitle)
         }
     </script>
-
 </head>
 
 <body>
@@ -105,22 +105,31 @@
     </header>
     <!--Header_section-->
 
-    <!-- 지도를 표시할 div 입니다 -->
-    <div id="map" style="width:100%;height:350px;"></div>
 
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=88a3b7ff3745fa1b7d0e7011ed06a10f"></script>
+    <!-- 지도를 표시할 div 영역 -->
+    <div id="map" style="width:100%;height: 500px;"></div>
+    
+
+
+
+    <!-- 카카오 MAP API js -->
+    <script src="../../js/kakaoMapApi/kakaoMap.js"></script>
+
+
+
+    <!-- 입력받은 주소를 지도에 마커로 표시 -->
+    <!--
+    주소 입력 <input type="text" id = "userAddress">
+    <button onclick="setAddress()">입력</button>
+
     <script>
-        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-            mapOption = {
-                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-                level: 3 // 지도의 확대 레벨
-            };
-
-        // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-        var map = new kakao.maps.Map(mapContainer, mapOption); 
-    </script>
-
-
+        function setAddress() {
+            const address = document.getElementById('userAddress').value;
+            alert(address);
+            
+            markMyAddress(address);
+        }
+    </script> -->
 
 
 
@@ -150,8 +159,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-
-    
 </body>
 
 </html>
