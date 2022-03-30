@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1">
@@ -13,7 +14,7 @@
     <!-- 부트스트랩 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+
     <!-- WOW CSS -->
     <link href="../../css/animate.css" rel="stylesheet" type="text/css">
 
@@ -23,26 +24,27 @@
     <link href="../../css/responsive.css" rel="stylesheet" type="text/css">
     <link href="../../css/animate.css" rel="stylesheet" type="text/css">
     <link href="../../css/design.css" rel="stylesheet" type="text/css">
-    
+
     <!----------------------------------------------------------------------------------->
-    
+
     <!------------------------------------- FONT ---------------------------------------->
-    
+
     <!-- 구글 웹 폰트 -->
     <link
         href='http://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic'
         rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
-    
-    
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet'
+        type='text/css'>
+
+
     <!----------------------------------------------------------------------------------->
-    
+
     <!-------------------------------------- JS ----------------------------------------->
-    
+
     <!-- UI에 관여하는 JS는 head 에서 호출한다. -->
     <!-- fondAwesome (아이콘 라이브러리 CDN) -->
     <script src="https://kit.fontawesome.com/fad007cb32.js" crossorigin="anonymous"></script>
-    
+
     <!-- Jquery -->
     <script type="text/javascript" src="../../js/jquery.1.8.3.min.js"></script>
     <script type="text/javascript" src="../../js/jquery-scrolltofixed.js"></script>
@@ -52,13 +54,16 @@
     <!-- WOW JS -->
     <script type="text/javascript" src="../../js/wow.js"></script>
 
-    <!-- 기타 js -->
+    <!-- 카카오 맵 js -->
+    <script src="../../js/kakaoMapApi/kakaoMap.js"></script>
     
+    <!-- 기타 js -->
+
     <!----------------------------------------------------------------------------------->
 
     <!-- 모바일 메뉴 탭 Script -->
-    <script src = "../../js/response/header_declare_mobile.js"></script>
-    
+    <script src="../../js/response/header_declare_mobile.js"></script>
+
     <script type="text/javascript">
         function resizeText() {
             var preferredWidth = 767;
@@ -71,58 +76,82 @@
     </script>
 
 </head>
+
 <body>
     <!--Header_section-->
     <header id="header_outer">
-      <div class="container">
-        <div class="header_section">
-          <div class="logo"><a href="../../index.html"><img src="../../img/manitoLogo.png" alt=""></a></div>
-          <nav class="nav" id="nav">
-            <ul class="toggle">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="chat.html">Chat</a></li>
-                <li><a href="../BoardHtml/board.html">Board</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="../../index.html">Logout</a></li>
-            </ul>
-            <ul class="">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="chat.html">Chat</a></li>
-                <li><a href="../BoardHtml/board.html">Board</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="../../index.html">Logout</a></li>
-            </ul>
-          </nav>
-          <a class="res-nav_click animated wobble wow"  href="javascript:void(0)"><i class="fa fa-bars"></i></a> </div>
-      </div>
+        <div class="container">
+            <div class="header_section">
+                <div class="logo"><a href="../../index.html"><img src="../../img/manitoLogo.png" alt=""></a></div>
+                <nav class="nav" id="nav">
+                    <ul class="toggle">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="chat.html">Chat</a></li>
+                        <li><a href="../BoardHtml/board.html">Board</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="../../index.html">Logout</a></li>
+                    </ul>
+                    <ul class="">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="chat.html">Chat</a></li>
+                        <li><a href="../BoardHtml/board.html">Board</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="../../index.html">Logout</a></li>
+                    </ul>
+                </nav>
+                <a class="res-nav_click animated wobble wow" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
     </header>
-    <!--Header_section--> 
+    <!--Header_section-->
+
+    <!-- 지도를 표시할 div 입니다 -->
+    <div id="map" style="width:100%;height:350px;"></div>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=88a3b7ff3745fa1b7d0e7011ed06a10f"></script>
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+        var map = new kakao.maps.Map(mapContainer, mapOption); 
+    </script>
+
+
+
+
 
     <!-- 모바일 메뉴 탭 js -->
     <script src="../../js/response/mobile.js"></script>
 
     <!-- WOW JS 초기화 -->
-<script>
-    wow = new WOW(
-        {
-            animateClass: 'animated',
-            offset: 100
-        }
-    );
-    wow.init();
-    document.getElementById('').onclick = function () {
-        var section = document.createElement('section');
-        section.className = 'wow fadeInDown';
-        section.className = 'wow shake';
-        section.className = 'wow zoomIn';
-        section.className = 'wow lightSpeedIn';
-        this.parentNode.insertBefore(section, this);
-    };
-</script>
+    <script>
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100
+            }
+        );
+        wow.init();
+        document.getElementById('').onclick = function () {
+            var section = document.createElement('section');
+            section.className = 'wow fadeInDown';
+            section.className = 'wow shake';
+            section.className = 'wow zoomIn';
+            section.className = 'wow lightSpeedIn';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
 
     <!-- 부트스트랩 js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+    </script>
+
+    
 </body>
+
 </html>
