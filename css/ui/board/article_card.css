@@ -14,6 +14,8 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 3rem;
+    width: 100%;
 }
 
 .drop__card, .drop__data{
@@ -82,7 +84,8 @@
 
 @media (min-width: 768px) {
     .article_container {
-      width: 750px;
+      /* width: 750px; */
+        width: 768px;
     }
   }
   
