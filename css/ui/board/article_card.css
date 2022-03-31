@@ -28,8 +28,7 @@
     justify-content: space-between;
     padding: 1em 0em 1em 0em;
     margin: 0 auto 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+    border-bottom: 0.0625rem solid #f2f2f2;
 }
 
 .drop__card:hover{
@@ -84,8 +83,13 @@
 
 @media (min-width: 768px) {
     .article_container {
-      /* width: 750px; */
         width: 768px;
+    }
+
+    .drop__card{
+        border: none;
+        border-radius: 0.5rem;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
     }
   }
   
