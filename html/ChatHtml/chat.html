@@ -116,12 +116,12 @@
 
 
     <!-- 지도를 표시할 div 영역 -->
-    <div id="map" style="width:100%;height: 700px;"></div>
+    <div id="map" style="width:100%;height: 800px;"></div>
     
     <!-- 카카오 MAP API js -->
     <script src="../../js/kakaoMapApi/kakaoMap.js"></script>
 
-    위도 입력 <input type="text" id = "lat">
+    위도(lat) 입력 <input type="text" id = "lat">
     경도 입력 <input type="text" id = "lng">
     메세지 입력 <input type="text" id = "message">
     <button onclick="mark()">입력</button>
@@ -133,13 +133,14 @@
             var message = document.getElementById('message').value;
             alert(lat + " " + lng);
 
-            makeMarker(lat, lng, message, "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1648639513/noticon/ntiuuruqlykhxpzso004.png");
+            makeOverlay(lat, lng, message);
         }
     </script>
+
     <!-- 입력받은 주소를 지도에 마커로 표시 -->
-    <!--
-    주소 입력 <input type="text" id = "userAddress">
-    <button onclick="setAddress()">입력</button>
+    
+    <!-- 주소 입력 <input type="text" id = "userAddress"> -->
+    <!-- <button onclick="setAddress()">입력</button>
 
     <script>
         function setAddress() {
