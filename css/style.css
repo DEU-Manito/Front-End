@@ -263,13 +263,14 @@ a.learn_more2{
 	line-height:46px;
 	border-radius:3px;
 	text-align:center;
-	font-family:''Dosis'';
+	font-family:'Dosis';
 	text-transform:uppercase;
 	font-weight: 600;
 	transition:all 0.2s ease-in-out;
 	-moz-transition:all 0.2s ease-in-out;
 	-webkit-transition:all 0.2s ease-in-out;
 	}
+
 a.learn_more2:hover{
 	background:#222222;
 	}
@@ -1694,3 +1695,13 @@ img {
 	}
 
 	
+#slogan{
+	background: linear-gradient(150deg, #71b7e6, #9b59b6);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+
+	font-family: 'Pacifico', cursive;
+	text-transform: none;
+	font-weight:100;
+}
