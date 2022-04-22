@@ -49,6 +49,7 @@
 	.client_area{ width:700px;}
 	.client_profile_pic{ width:150px; height:150px;}
 	.quote_section.flt{ margin:6px 0 0 0;}
+	.rotating_text > p{ font-size: 22px; }
 }
 
 @media only screen and (max-width: 767px) {
@@ -72,6 +73,8 @@
 	.top_left_cont { padding: 10% 0;}
 	.top_left_cont h2{ font-size:29px;}
 	.top_content{padding-top: 0px;}
+	.rotating_text > p{ font-size: 25px; }
+
 
 	body{ font-size:12px;}
 	h2{ font-size:26px;}
@@ -133,7 +136,7 @@
 	.res-nav_click a{ text-decoration:none;}
 	.res-nav_click a:hover{ text-decoration:none; color:#060;}
 	.nav ul{ background:#fff; display:none;}
-	
+	.rotating_text > p{ font-size: 20px; }
 .nav ul.toggle{
 	display:none;
 	visibility:visible;
@@ -166,6 +169,8 @@
 	.Portfolio-box img { max-width:100%;}
 	.portfolioContainer{ width:280px !important; margin:0 auto !important }
 	.top_left_cont h2{ font-size:20px;} 
+	.rotating_text > p{ font-size: 18px; }
+
 	.client_area{ width:276px;}
 	.quote_section p{ font-size:15px;} 
 	.c-logo-part{ padding:18px 0px;}
