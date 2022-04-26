@@ -28,7 +28,7 @@ p {
 .word {
   position: absolute;
   /* width: 220px; */
-  width: 100%;
+  /* width: 100%; */
   opacity: 0;
 }
 
@@ -83,4 +83,6 @@ p {
 }
 .underline--magical:hover {
   background-size: 100% 88%;
+  color: #ffffff;
+  /* transition: color .5s ease;   */
 }
