@@ -161,6 +161,9 @@ p {
 
 .res-nav_click {
 	display: none;
+	background: linear-gradient(120deg, #8fd3f4 0%, #df77ff 100%);
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 /* Nav Styles
@@ -226,6 +229,7 @@ p {
 
 .top_cont_inner {
 	background: url(../../img/white_pad.png) no-repeat right bottom;
+	/* background: url(../../img/help.png) no-repeat right bottom; */
 }
 
 .top_content {

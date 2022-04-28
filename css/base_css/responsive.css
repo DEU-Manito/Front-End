@@ -123,19 +123,31 @@
 	.logo{ margin:0px auto 10px; float:none; }
 	.nav{ float:none; position:absolute; width:100%; top: 73px;}
 	
+	/* 모바일 navbar */
 	toggle.ul{ background:#fff; width:100%;}
-	.nav ul li{ border-bottom:1px solid #CCC; display:block; float:none; width:100%; margin:0px; text-align:center;}
+	.nav ul li{ 
+		/* border-bottom:1px solid #CCC;  */
+		display:block; 
+		float:none; 
+		width:100%; 
+		margin:0px; 
+		text-align:center;
+		padding: 5px 10px 5px 10px;
+	}
 	.nav ul li a{ padding:6px 0px}
 	.res-nav_click{ 
 		bottom: -42px;
 		display: block;
 		font-size: 25px;
-		left: 48%;
 		position: absolute;
+		right: 0%;
+		top: 0%;
 	}
 	.res-nav_click a{ text-decoration:none;}
 	.res-nav_click a:hover{ text-decoration:none; color:#060;}
 	.nav ul{ background:#fff; display:none;}
+
+	/* 모바일 navbar 끝 */
 	.rotating_text > p{ font-size: 20px; }
 .nav ul.toggle{
 	display:none;

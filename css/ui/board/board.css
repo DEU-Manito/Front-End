@@ -295,13 +295,13 @@ body {
 
 .search-bar:hover {
     border-color: var(--action-color-hover);
-    background-author: url("data:author/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%236291fd' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-search'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+    background-image: url("data:author/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%236291fd' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-search'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
 }
 
 .search-bar:focus {
     outline: none;
     border-color: var(--action-color);
-    background-author: url("data:author/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232869ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-search'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+    background-image: url("data:author/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232869ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-search'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
 }
 
 .action-button {
@@ -461,6 +461,7 @@ body {
 .tableView .products-row:hover {
     box-shadow: var(--filter-shadow);
     background-color: var(--app-content-secondary-color);
+    cursor: pointer;
 }
 
 .tableView .products-row .cell-more-button {
@@ -493,11 +494,14 @@ body {
     flex: 4;
 }
 
-.tableView .stock .price .status{
+.tableView .viewcount .price .status{
     flex: 0.5;
 }
 
 @media screen and (max-width: 780px) {
+    .app-container{
+        padding: 0;
+    }
     .tableView .products-row{
         height: 100px;
     }
@@ -538,7 +542,7 @@ body {
         flex: 0.4;
     }
 
-    .tableView .product-cell.stock,
+    .tableView .product-cell.viewcount,
     .tableView .product-cell.price {
         /* flex: 0.2; */
         display: none;
@@ -546,13 +550,17 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .tableView .product-cell.stock {
+    .tableView .product-cell.viewcount {
         display: none;
     }
 
     .tableView .product-cell.price {
         flex: 0.4;
     }
+}
+
+@media screen and (max-width: 320px) {
+    
 }
 
 .tableView .sort-button {
@@ -719,4 +727,21 @@ body {
 
 .gridView .cell-label {
     opacity: 0.6;
+}
+
+.write_btn{
+    border-radius: 4px;
+    height: 32px;
+    background-color: var(--app-content-secondary-color);
+    border: 1px solid var(--app-content-secondary-color);
+    display: flex;
+    align-items: center;
+    color: var(--app-content-main-color);
+    font-size: 14px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.write_btn:hover {
+    border-color: var(--action-color-hover);
 }
