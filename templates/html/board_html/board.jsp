@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 
@@ -88,15 +90,15 @@
                 <nav class="nav" id="nav">
                     <ul class="toggle">
                         <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../ChatHtml/chat.html">Chat</a></li>
-                        <li><a href="./board.html">Board</a></li>
+                        <li><a href="../ChatHtml/chat.jsp">Chat</a></li>
+                        <li><a href="./board.jsp">Board</a></li>
                         <li><a href="#Portfolio">Portfolio</a></li>
                         <li><a href="../../index.html">Logout</a></li>
                     </ul>
                     <ul class="">
                         <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../ChatHtml/chat.html">Chat</a></li>
-                        <li><a href="./board.html">Board</a></li>
+                        <li><a href="../ChatHtml/chat.jsp">Chat</a></li>
+                        <li><a href="./board.jsp">Board</a></li>
                         <li><a href="#Portfolio">Portfolio</a></li>
                         <li><a href="../../index.html">Logout</a></li>
                     </ul>
@@ -256,6 +258,7 @@
                     </div>
                   <div class="product-cell title" style="display: block;">
                     <span class="cell-label">title:</span>
+                     
                     <h3>도움 요청 게시글</h3>
                     <p>Dong</p>
                   </div>
