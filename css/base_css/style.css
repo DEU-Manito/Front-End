@@ -8,6 +8,11 @@
 
 /* CSS Document */
 
+:root{
+	--main-banner-white-blur: rgba(255,255,255,0.5);
+	--main-banner-black-blur: rgba(0,0,0,0.7);
+}
+
 /* Float Elements 
 ---------------------------------*/
 .fl-lt {
@@ -147,9 +152,12 @@ p {
 ---------------------------------*/
 
 #header_outer {
-	background: #ffffff;
+	/* background: #ffffff; */
+	background: var(--main-banner-white-blur);
+	
 	padding: 15px 0px;
 }
+
 
 .header_section {
 	position: relative;
@@ -222,14 +230,28 @@ p {
 /* Top_content
 ---------------------------------*/
 
-.top_cont_outer {
-	background: #f9f9f9;
-	position: relative;
+.top_cont_inner::before {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+	background: url(../../img/manito2.jpg) no-repeat right;
+	background-size: cover;
+	
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(10px);
+
+	z-index: -1;
+	content: "";
 }
 
-.top_cont_inner {
-	background: url(../../img/white_pad.png) no-repeat right bottom;
-	/* background: url(../../img/help.png) no-repeat right bottom; */
+.top_cont_outer {
+	position: relative;
 }
 
 .top_content {
@@ -317,6 +339,8 @@ a.learn_more2:hover {
 ---------------------------------*/
 
 #service {
+	/* background: var(--main-banner-white-blur); */
+	background: #fff;
 	padding: 83px 0px;
 }
 
@@ -395,7 +419,8 @@ a.learn_more2:hover {
 
 
 #work_outer {
-	background: #f9f9f9;
+	/* background: #f9f9f9; */
+	background: var(--main-banner-white-blur);
 	padding: 70px 0px;
 	position: relative;
 }
@@ -488,6 +513,8 @@ a.contact_btn:hover {
 
 
 #Portfolio {
+	/* background: var(--main-banner-white-blur); */
+	background: #f9f9f9;
 	padding: 100px 0px;
 }
 
@@ -585,7 +612,8 @@ img {
 
 
 #client_outer {
-	padding: 0px 0px;
+	background: var(--main-banner-white-blur);
+	padding: 50px 0px;
 }
 
 .client_area {
@@ -705,7 +733,7 @@ img {
 .c-logo-part {
 	background: url(../../img/poligan_bg.jpg) no-repeat left top;
 	padding: 60px 0;
-	margin-top: 60px;
+	/* margin-top: 60px; */
 	filter: alpha(opacity=60);
 }
 
@@ -727,6 +755,7 @@ img {
 }
 
 .main-section.team {
+	background: #f9f9f9;
 	padding: 85px 0;
 }
 
@@ -857,40 +886,8 @@ img {
 	color: #dd4b39;
 }
 
-/* Twitter Feed
----------------------------------*/
-
-/*
-.business-talking{
-	background:#00b8ff;
-	padding:40px 0;
-	text-align:center;
-}
-
-.business-talking p{
-	font-size:16px;
-	color:#ffffff;
-	margin:0 0 15px 0;
-	}
-	
-.twitter_bird{
-	background:url(../img/twitter_bird.png) no-repeat left top;
-	width:36px;
-	margin:0px auto 15px;
-	}
-	
-.business-talking p small{
-	font-size:16px;
-	color:#ffffff;
-	display:inline-block;
-	}
-	
-.business-talking span{
-	display:block;
-	font-size:14px;
-	color:#ffffff;
-	}
-*/
+/* Twitter Feed 
+-------------------------------------*/
 
 .twitter-feed {
 	background: #00b8ff;
@@ -1164,7 +1161,8 @@ img {
 ---------------------------------*/
 
 .footer_section {
-	background: url(../../img/pattern_bg.jpg) repeat left top;
+	/* background: url(../../img/pattern_bg.jpg) repeat left top; */
+	background: var(--main-banner-black-blur);
 }
 
 .footer_bottom {
@@ -1243,12 +1241,6 @@ img {
 	animation-delay: 1.2s;
 	-webkit-animation-delay: 1.2s;
 }
-
-
-/*new_profolio*/
-
-
-
 
 /* Portfolio */
 
